@@ -1,7 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AluraXamarin.MainPage">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AluraXamarin.MainPage">
 
     <!--<StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
@@ -26,7 +24,18 @@
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.View>
-                        <Label Text="{Binding Nome}"></Label>
+                        <!--<Label Text="{Binding Nome}"></Label>-->
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Fiesta 2.00" FontSize="20"></Span>
+                                        <Span Text="-"></Span>
+                                        <Span Text="40000" FontAttributes="Bold" ></Span>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                     </ViewCell.View>
                 </ViewCell>
             </DataTemplate>
