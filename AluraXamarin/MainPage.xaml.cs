@@ -13,6 +13,13 @@ namespace AluraXamarin
         public MainPage()
         {
             InitializeComponent();
+
+            listViewVeiculos.ItemsSource = new string[]
+            {
+                "Azera V6",
+                "Fiesta 2.0",
+                "HB20 S",
+            };
         }
     }
 }
